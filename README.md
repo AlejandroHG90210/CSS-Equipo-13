@@ -1,2 +1,2 @@
-#CSS-Equipo-13
+CSS-Equipo-13
 
