@@ -36,24 +36,25 @@
       <p> Los elementos HTML incluyen márgenes por defecto. Aunque los navegadores web actuales tienen una calidad muy superior a los antiguos, conviene saber que cada motor de restitución empleado por los navegadores aplica sus propias reglas para mostrar los elementos en pantalla. En teoría esto quiere decir que el margen por defecto de 10 pixeles en un navegador X puede transformarse en 15 pixeles en el navegador y estas diferencias generan resultados no homogéneos a la hora de ver las páginas en distintos sistemas 
       Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS de reset que elimine los estilos por defecto aplicados a los elementos HTML utilizados con más frecuencia. Con este reinicio de valores podemos conseguir una base fiable y coherente sobre la cual construir nuestros nuevos estilos. Para hacernos idea de cómo funcionan los estilos, vamos a abrir una página que ya tiene varios estilos y le asociaremos una hoja de estilos CSS de reset.
       </p>
-      <ol>En el editor de textos, en Archivo selecciona Abrir. Abre en la carpeta HTML5_03lessons el archivo 03_reset.html.
-        Este archivo contiene una serie de elementos HTML genéricos, como títulos, párrafos, listas y formularios. No incluye estilos CSS.
-        </ol>
+      <ol>
+        <li> En el editor de textos, en Archivo selecciona Abrir. Abre en la carpeta HTML5_03lessons el archivo 03_reset.html.
+        Este archivo contiene una serie de elementos HTML genéricos, como títulos, párrafos, listas y formularios. No incluye estilos CSS.</li>
       <li>Muestra en el navegador la página y mira el  espacio de separación que hay entre los títulos, y fíjate también en el aspecto de las listas de datos y el formulario. Lo que haremos ahora es asociar una hoja de estilo CSS de reset para ver cómo afecta a la presentación en pantalla de estos elementos. Cierra el navegador y vuelve al editor.</ol>
       <li>Añade la siguiente línea de código (destacada en color rojo) debajo de la etiqueta de título para asociar la hoja de estilos reset.css que se encuentra también en la carpeta HTML5_03lessons:
-        &lt;head&gt;
+        <p>&lt;head&gt;
            &lt;meta charset="utf-8" /&gt;
            &lt;title&gt; CSS Reset&lt;/title&gt;
            &lt;link href="reset.css" rel="stylesheet" type="text/css"&gt;
-        &lt;/head&gt;
+        &lt;/head&gt;</p>
         Guarda el archivo y visualízalo en el navegador
         Una página con elementos HTML habituales con reset de estilos CSS.
         Muchos de los elementos en esta página tenían los márgenes y distancias al borde prefijadas a cero. En consecuencia, el espacio entre ellos se ha eliminado. Se han reseteado también otros muchos estilos, como por ejemplo las listas de datos, que se han dejado en valor “none”, lo que elimina los puntos de las líneas en las listas no ordenadas, así como los números de orden en las listas ordenadas. Cierra el navegador y vuelve al editor de textos.
-        </ol>
-      <ol>Selecciona Archivo-Abrir. En la ventana, selecciona el archivo reset.css y pulsa Abrir. Revisa un momento el contenido.
+        </li>
+      <li>Selecciona Archivo-Abrir. En la ventana, selecciona el archivo reset.css y pulsa Abrir. Revisa un momento el contenido.
         Esta serie de reglas elimina los valores por defecto de márgenes, márgenes interiores (“padding”), y los bordes de casi todos los elementos HTML.
-        </ol>
-      <ol>Ahora vamos a modificar la hoja de estilos, pero tenemos que asociarla a las páginas web. Recuerda que las hojas de estilos de reset son opcionales. Nos ayudan a normalizar la presentación en los distintos navegadores, y algunos diseñadores también incluyen en ellas sus propios estilos de uso frecuente para reiniciar los valores iniciales de los elementos.</ol>
+      </li>
+      <li>Ahora vamos a modificar la hoja de estilos, pero tenemos que asociarla a las páginas web. Recuerda que las hojas de estilos de reset son opcionales. Nos ayudan a normalizar la presentación en los distintos navegadores, y algunos diseñadores también incluyen en ellas sus propios estilos de uso frecuente para reiniciar los valores iniciales de los elementos.</li>
+      </ol>
      <p><b>Breve historia de las técnicas de presentación en pantalla para la Web </b></p>
      <p>Cuando se empezó con el diseño web a mediados de los 90, el único método que se podía emplear para crear estructuras visuales complejas, como por ejemplo la presentación en varias columnas, consistía en emplear el elemento tabla (<table>). La tabla HTML estaba pensada inicialmente para mostrar datos de manera estructurada, en filas, columnas y celdas. Sin embargo los diseñadores empezaron a utilizar este elemento como base para las estructuras visuales de las páginas. En aquel momento esa técnica estaba plenamente justificada: las tablas era lo único que tenían para generar el tipo de diseños que se necesitaban y, además, eran un recurso extremadamente flexible.
       Empezaron a utilizarse técnicas como el anidamiento de tablas, es decir, crear tablas dentro de celdas de otras tablas de mayor tamaño. Por ejemplo, el código para una página normal de dos columnas podía empezar creando una tabla de tres filas y dos columnas:
