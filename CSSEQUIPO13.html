@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
       <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -135,11 +136,11 @@
      <ol>Vuelve al editor y localiza la regla #mainnav. Añade una nueva regla entre ésta y la regla de la barra lateral pulsando Intro unas cuantas veces e insertando el código siguiente:
       #mainnav li {
       float:left;
-    }
-   Fíjate que en este paso estamos creando una nueva regla justo después de #mainnav. Aunque podríamos haber insertado la regla al final de la hoja de estilos, las buenas prácticas recomiendan que se pongan juntas las reglas que tienen relación entre sí para que el código esté más organizado y sea más fácil de mantener.
-   </ol>
+     }
+     Fíjate que en este paso estamos creando una nueva regla justo después de #mainnav. Aunque podríamos haber insertado la regla al final de la hoja de estilos, las buenas prácticas recomiendan que se pongan juntas las reglas que tienen relación entre sí para que el código esté más organizado y sea más fácil de mantener.
+     </ol>
      <ol>Guarda la página y visualízala en el navegador. Todos los elementos aparecen ahora colocados en horizontal. Los enlaces casi no se ven porque hay muy poco contraste entre el enlace que se escribe en color azul oscuro y el gris oscuro del fondo de la sección “mainnav”, pero lo vamos a resolver añadiendo unas cuantas reglas de estilo más.
-    </ol>
+     </ol>
      <ol>Vuelve al editor y añade este código a la regla #mainnav li:
       #mainnav li {
          float:left;
@@ -153,7 +154,7 @@
       </ol>
      <ol>Debajo de la declaración de border-right, añade esta línea de código:
       line-height:40px;
-    </ol>
+     </ol>
      <ol>Guarda el archivo y muéstralo en el navegador, El texto aparece ahora centrado dentro del recuadro. Conviene notar que podemos tener problemas si en un futuro cambiásemos el texto de los elementos de la navegación, ya que tanto el valor de “line-height” como el tamaño del propio contenedor se basan en el tamaño de la fuente. Si cambiásemos el tamaño de la fuente o la altura de la sección “nav”, habría que volver a ajustarlo todo para compensar los desplazamientos.</ol>
      <p><b>Añadir estilos para el texto </b></p>
      <p>Hasta aquí hemos añadido los estilos dentro de una hoja de estilos interna en vez de hacerlo sobre una externa. Cuando estamos diseñando la estructura de las páginas, el empleo de hojas de estilo internas es una cuestión de comodidad: resulta más sencillo para crear y modificar reglas si las tenemos dentro de la página y podemos llegar a ellas desplazando la ventana que si las tenemos en un archivo externo. De momento vamos a asociar una hoja de estilos externa que añade reglas de base para elementos como títulos, listas y párrafos.</p>
