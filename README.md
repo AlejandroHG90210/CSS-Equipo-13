@@ -221,15 +221,15 @@
      <p><b>Ajuste fino de la estructura visual de la página </b></p>
      <p>Ahora vamos a eliminar los colores de fondo de los divs del centro de la página, añadiremos algunas imágenes de fondo y mejoraremos algo el estilo de nuestra barra de navegación.</p>
       <ul>
-     <li>Elimina toda la propiedad background-color en las siguientes 4 reglas de estilo:  #wrap, #sidebar, #main y #footer. Guarda el archivo y visualízalo en el navegador.</li>
-      <li>Vamos a empezar por poner un fondo de gradiente de color a la barra lateral. Vuelve al editor y añade estas declaraciones a la regla #sidebar:
-        #sidebar {
-        float:right;
-        width:300px;
-        background-image:url(images/sidebar_bg.png);
-        background-repeat:repeat-x;
-        }</li>
-      <li>Añade también esta otra declaración para aplicarla al borde Izquierdo de la barra.
+     <li>1. Elimina toda la propiedad background-color en las siguientes 4 reglas de estilo:  #wrap, #sidebar, #main y #footer. Guarda el archivo y visualízalo en el navegador.</li>
+      <li>2. Vamos a empezar por poner un fondo de gradiente de color a la barra lateral. Vuelve al editor y añade estas declaraciones a la regla #sidebar:
+       <p>#sidebar { </p>
+       <p>float:right;</p>
+       <p>width:300px;</p>
+       <p>background-image:url(images/sidebar_bg.png);</p>
+       <p>background-repeat:repeat-x;</p>
+       <p>}</p></li>
+      <li>3. Añade también esta otra declaración para aplicarla al borde Izquierdo de la barra.
         #sidebar {
           float:right;
           width:300px;
@@ -237,18 +237,18 @@
         background-repeat:repeat-x;
         border-left: thin solid gray;
         }</li>
-      <li>Otro problema de nuestra estructura es el logo dentro de la cabecera. En este momento está anidado y se presenta en pantalla pegado al borde del contenedor:
+      <li>4. Otro problema de nuestra estructura es el logo dentro de la cabecera. En este momento está anidado y se presenta en pantalla pegado al borde del contenedor:
         #masthead img {
           margin-left: 20px;
         }
         Se trata de un selector contextual igual que otros que hemos ido añadiendo a los títulos y párrafos dentro de las columnas “main” y “sidebar”. En este caso, se trata de una declaración para añadirle margen por la izquierda a todas las imágenes que puedan aparecer en el div “masthead”.</li>
-      <li>5.	Para mejorar la presencia visual de los enlaces dentro de la sección “mainnav” vamos a añadir una regla explícita para los enlaces. Encuentra la regla #mainnav li y añade la siguiente regla justo debajo de ella:
+      <li>5. Para mejorar la presencia visual de los enlaces dentro de la sección “mainnav” vamos a añadir una regla explícita para los enlaces. Encuentra la regla #mainnav li y añade la siguiente regla justo debajo de ella:
         #mainnav ul li a {
         color:#ffffff;
         text-decoration: none;
         display:block;
         }</li>
-      <li>Cuando el usuario pasa el cursor por encima de los enlaces, sería interesante que cambiasen su apariencia, así sabe que se trata de vínculos y no de texto normal. Para ello podemos aprovechar una particularidad de los estilos que solo tienen los vínculos. Justo debajo de la regla #mainnav ul li a , añade esta otra:
+      <li>6. Cuando el usuario pasa el cursor por encima de los enlaces, sería interesante que cambiasen su apariencia, así sabe que se trata de vínculos y no de texto normal. Para ello podemos aprovechar una particularidad de los estilos que solo tienen los vínculos. Justo debajo de la regla #mainnav ul li a , añade esta otra:
         #mainnav ul li a:hover {
         background-color:#666666;
         color:#D2CD2F;
@@ -258,10 +258,10 @@
      <p>Para seguir practicando con márgenes internos y externos, añade otros contenidos a la sección “main”. Por ejemplo, puedes añadir un título de nivel 3 y una lista no ordenada entre los dos párrafos:</p>
       <p>&lt;h3&gt;Quick Links&lt;/h3&gt;</p>
       <p>&lt;ul&gt;</p>
-      <p> &lt;li&gt;New Employee Forms&lt;/li&gt;</p>
-      <p> &lt;li&gt;Flexible Spending Plans&lt;/li&gt;</p>
-      <p> &lt;li&gt;401K paperwork&lt;/li&gt;</p>
-      <p> &lt;li&gt;Employee Discounts&lt;/li&gt;</p>
+      <p><br> &lt;li&gt;New Employee Forms&lt;/li&gt;</p>
+      <p><br> &lt;li&gt;Flexible Spending Plans&lt;/li&gt;</p>
+      <p><br> &lt;li&gt;401K paperwork&lt;/li&gt;</p>
+      <p><br> &lt;li&gt;Employee Discounts&lt;/li&gt;</p>
       <p>&lt;/ul&gt;</p>
      <p><b>Repaso</b></p>
      <p><b>1.	¿En qué consiste un diseño de anchura fija y un diseño de ancho variable?. ¿Qué ventajas y desventajas presentan cada uno de ellos?</b></p>
@@ -333,5 +333,3 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    </body>
 </html>
-
-
