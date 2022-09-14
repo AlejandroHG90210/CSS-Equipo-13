@@ -1,6 +1,4 @@
-# CSS-Equipo-13
-<!doctype html>
-<html lang="en">
+<html>
       <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
