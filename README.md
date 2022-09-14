@@ -28,19 +28,19 @@
      <p>En esta siguiente lección aprenderemos los conceptos fundamentales de diseño Web basados en CSS y la preparación de una estructura visual de página web con dos columnas y anchura fija. Además, también veremos el empleo de un archivo de “reset” de CSS y cómo se añade a las páginas. Se aborda también el uso del elemento &lt;div&gt; y las propiedades “float” y “clear” para crear columnas en la página.</p>
      <b> <p>El papel del archivo de reset CSS:</p></b>
      <p>Antes de empezar a crear un diseño visual de página Web vamos a ver cómo se utiliza un archivo de reset de CSS. Todos los elementos HTML se muestran en pantalla utilizando los estilos por defecto que aplica cada navegador. Ya hemos visto en el capítulo precedente cómo CSS nos permite definir estilos para tipos de letra, modificando el tamaño y la fuente, pero hay otros estilos no tan obvios. Por ejemplo: el estilo por defecto para un elemento heading 1 (&lt;h1&gt;) incluye unos márgenes de 10 pixeles por encima y por debajo del texto. Si queremos modificar el estilo de h1 para que no lleve márgenes, tendremos que indicar de manera explícita unas reglas que conviertan dichos valores a cero.
-      Una regla CSS para anular los márgenes superior e inferior de los elementos heading 1 es así:
-      h1{
+      Una regla CSS para anular los márgenes superior e inferior de los elementos heading 1 es así: </p>
+    <p>h1{
          margin-top:0px;
          margin-bottom:0px;
-      }
-      Los elementos HTML incluyen márgenes por defecto. Aunque los navegadores web actuales tienen una calidad muy superior a los antiguos, conviene saber que cada motor de restitución empleado por los navegadores aplica sus propias reglas para mostrar los elementos en pantalla. En teoría esto quiere decir que el margen por defecto de 10 pixeles en un navegador X puede transformarse en 15 pixeles en el navegador y estas diferencias generan resultados no homogéneos a la hora de ver las páginas en distintos sistemas 
+      }</p>
+      <p> Los elementos HTML incluyen márgenes por defecto. Aunque los navegadores web actuales tienen una calidad muy superior a los antiguos, conviene saber que cada motor de restitución empleado por los navegadores aplica sus propias reglas para mostrar los elementos en pantalla. En teoría esto quiere decir que el margen por defecto de 10 pixeles en un navegador X puede transformarse en 15 pixeles en el navegador y estas diferencias generan resultados no homogéneos a la hora de ver las páginas en distintos sistemas 
       Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS de reset que elimine los estilos por defecto aplicados a los elementos HTML utilizados con más frecuencia. Con este reinicio de valores podemos conseguir una base fiable y coherente sobre la cual construir nuestros nuevos estilos. Para hacernos idea de cómo funcionan los estilos, vamos a abrir una página que ya tiene varios estilos y le asociaremos una hoja de estilos CSS de reset.
       </p>
       <ol>En el editor de textos, en Archivo selecciona Abrir. Abre en la carpeta HTML5_03lessons el archivo 03_reset.html.
         Este archivo contiene una serie de elementos HTML genéricos, como títulos, párrafos, listas y formularios. No incluye estilos CSS.
         </ol>
-      <ol>Muestra en el navegador la página y mira el  espacio de separación que hay entre los títulos, y fíjate también en el aspecto de las listas de datos y el formulario. Lo que haremos ahora es asociar una hoja de estilo CSS de reset para ver cómo afecta a la presentación en pantalla de estos elementos. Cierra el navegador y vuelve al editor.</ol>
-      <ol>Añade la siguiente línea de código (destacada en color rojo) debajo de la etiqueta de título para asociar la hoja de estilos reset.css que se encuentra también en la carpeta HTML5_03lessons:
+      <li>Muestra en el navegador la página y mira el  espacio de separación que hay entre los títulos, y fíjate también en el aspecto de las listas de datos y el formulario. Lo que haremos ahora es asociar una hoja de estilo CSS de reset para ver cómo afecta a la presentación en pantalla de estos elementos. Cierra el navegador y vuelve al editor.</ol>
+      <li>Añade la siguiente línea de código (destacada en color rojo) debajo de la etiqueta de título para asociar la hoja de estilos reset.css que se encuentra también en la carpeta HTML5_03lessons:
         &lt;head&gt;
            &lt;meta charset="utf-8" /&gt;
            &lt;title&gt; CSS Reset&lt;/title&gt;
@@ -296,8 +296,7 @@
         <p>En conclusion, esta practica nos fue de mucha ayuda, ya que nos empezamos a meter un poco con CSS que es una parte fundamental para el momento de hacer paginas web con un buen diseño y llamativas. Vimos el elemento div, que nos ayuda para personalizar a nuestro gusto pequeñas partes de la pagina, independientemente de el contenido de esta. Tambien un elemento de CSS que me pareció muy interesante y que no conocía, es el elemento float que lo que hace es que ubica un elemento hacia el lado derecho o el lado izquierdo del contenedor , haciendo que el texto que lo acompañe se situe al lado de la imagen</p>
         <b><p>Diana Nahomi Santos Ortega  </p></b>
         <p>Esta practica fue realmente interesante porque comprendí los diferentes conceptos fundamentales que se involucran en el diseño Web basados en CSS, como también la preparación de una estructura visual de página web con dos columnas y por supuesto su anchura fija. Además, también entendí con mayor facilidad el cómo es el empleo de un archivo de “reset” de CSS y cómo se debe de añadir a las páginas. En esta práctica se aborda el uso del elemento <div> y así mismo las propiedades “float” y “clear” para crear columnas en la página.
-          Son temas muy importantes que debemos comprender mucho sobre ellos ya que básicamente comprendiendo esta información es posible ponerla en practica en determinado tiempo con mas facilidad y mejorando cada día para un buen desempeño. 
-          </p>
+          Son temas muy importantes que debemos comprender mucho sobre ellos ya que básicamente comprendiendo esta información es posible ponerla en practica en determinado tiempo con mas facilidad y mejorando cada día para un buen desempeño. </p>
         <br>
         <br>
             <h4>Elaborado por:</h4>
@@ -338,3 +337,4 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    </body>
 </html>
+
