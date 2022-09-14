@@ -220,16 +220,17 @@
       </p>
      <p><b>Ajuste fino de la estructura visual de la página </b></p>
      <p>Ahora vamos a eliminar los colores de fondo de los divs del centro de la página, añadiremos algunas imágenes de fondo y mejoraremos algo el estilo de nuestra barra de navegación.</p>
-      <ol>Elimina toda la propiedad background-color en las siguientes 4 reglas de estilo:  #wrap, #sidebar, #main y #footer. Guarda el archivo y visualízalo en el navegador.</ol>
-      <ol>Vamos a empezar por poner un fondo de gradiente de color a la barra lateral. Vuelve al editor y añade estas declaraciones a la regla #sidebar:
+      <ul>
+     <li>Elimina toda la propiedad background-color en las siguientes 4 reglas de estilo:  #wrap, #sidebar, #main y #footer. Guarda el archivo y visualízalo en el navegador.</ol>
+      <li>Vamos a empezar por poner un fondo de gradiente de color a la barra lateral. Vuelve al editor y añade estas declaraciones a la regla #sidebar:
         #sidebar {
         float:right;
         width:300px;
         background-image:url(images/sidebar_bg.png);
         background-repeat:repeat-x;
         }
-        </ol>
-      <ol>Añade también esta otra declaración para aplicarla al borde Izquierdo de la barra.
+     </li>
+      <li>Añade también esta otra declaración para aplicarla al borde Izquierdo de la barra.
         #sidebar {
           float:right;
           width:300px;
@@ -237,36 +238,36 @@
         background-repeat:repeat-x;
         border-left: thin solid gray;
         }
-        </ol>
-      <ol>Otro problema de nuestra estructura es el logo dentro de la cabecera. En este momento está anidado y se presenta en pantalla pegado al borde del contenedor:
+      </li>
+      <li>Otro problema de nuestra estructura es el logo dentro de la cabecera. En este momento está anidado y se presenta en pantalla pegado al borde del contenedor:
         #masthead img {
           margin-left: 20px;
         }
         Se trata de un selector contextual igual que otros que hemos ido añadiendo a los títulos y párrafos dentro de las columnas “main” y “sidebar”. En este caso, se trata de una declaración para añadirle margen por la izquierda a todas las imágenes que puedan aparecer en el div “masthead”.
-        </ol>
-      <ol>5.	Para mejorar la presencia visual de los enlaces dentro de la sección “mainnav” vamos a añadir una regla explícita para los enlaces. Encuentra la regla #mainnav li y añade la siguiente regla justo debajo de ella:
+     </li>
+      <li>5.	Para mejorar la presencia visual de los enlaces dentro de la sección “mainnav” vamos a añadir una regla explícita para los enlaces. Encuentra la regla #mainnav li y añade la siguiente regla justo debajo de ella:
         #mainnav ul li a {
         color:#ffffff;
         text-decoration: none;
         display:block;
         }
-        </ol>
-      <ol>Cuando el usuario pasa el cursor por encima de los enlaces, sería interesante que cambiasen su apariencia, así sabe que se trata de vínculos y no de texto normal. Para ello podemos aprovechar una particularidad de los estilos que solo tienen los vínculos. Justo debajo de la regla #mainnav ul li a , añade esta otra:
+      </li>
+      <li>Cuando el usuario pasa el cursor por encima de los enlaces, sería interesante que cambiasen su apariencia, así sabe que se trata de vínculos y no de texto normal. Para ello podemos aprovechar una particularidad de los estilos que solo tienen los vínculos. Justo debajo de la regla #mainnav ul li a , añade esta otra:
         #mainnav ul li a:hover {
         background-color:#666666;
         color:#D2CD2F;
         }
-        </ol>
+      </li>
+      </ul>
      <p><b>Autoestudio</b></p>
-     <p>Para seguir practicando con márgenes internos y externos, añade otros contenidos a la sección “main”. Por ejemplo, puedes añadir un título de nivel 3 y una lista no ordenada entre los dos párrafos:
-      &lt;h3&gt;Quick Links&lt;/h3&gt;
-        &lt;ul&gt;
-          &lt;li&gt;New Employee Forms&lt;/li&gt;
-          &lt;li&gt;Flexible Spending Plans&lt;/li&gt;
-          &lt;li&gt;401K paperwork&lt;/li&gt;
-          &lt;li&gt;Employee Discounts&lt;/li&gt;
-        &lt;/ul&gt;
-      </p>
+     <p>Para seguir practicando con márgenes internos y externos, añade otros contenidos a la sección “main”. Por ejemplo, puedes añadir un título de nivel 3 y una lista no ordenada entre los dos párrafos:</p>
+      <p>&lt;h3&gt;Quick Links&lt;/h3&gt;</p>
+      <p>&lt;ul&gt;</p>
+      <p> &lt;li&gt;New Employee Forms&lt;/li&gt;</p>
+      <p> &lt;li&gt;Flexible Spending Plans&lt;/li&gt;</p>
+      <p> &lt;li&gt;401K paperwork&lt;/li&gt;</p>
+      <p> &lt;li&gt;Employee Discounts&lt;/li&gt;</p>
+      <p>&lt;/ul&gt;</p>
      <p><b>Repaso</b></p>
      <p><b>1.	¿En qué consiste un diseño de anchura fija y un diseño de ancho variable?. ¿Qué ventajas y desventajas presentan cada uno de ellos?</b></p>
      <p>En un diseño de anchura fija, el contenedor primario tiene una anchura absoluta. Una de las ventajas principales de este tipo de diseños es que es más fiable a la hora de colocar los demás elementos. Su desventaja más importante es que no altera su tamaño al cambiar las dimensiones de la ventana del navegador.</p>
@@ -295,8 +296,8 @@
         <b><p>Jesus Ruben Balleza Rojas </p></b>
         <p>En conclusion, esta practica nos fue de mucha ayuda, ya que nos empezamos a meter un poco con CSS que es una parte fundamental para el momento de hacer paginas web con un buen diseño y llamativas. Vimos el elemento div, que nos ayuda para personalizar a nuestro gusto pequeñas partes de la pagina, independientemente de el contenido de esta. Tambien un elemento de CSS que me pareció muy interesante y que no conocía, es el elemento float que lo que hace es que ubica un elemento hacia el lado derecho o el lado izquierdo del contenedor , haciendo que el texto que lo acompañe se situe al lado de la imagen</p>
         <b><p>Diana Nahomi Santos Ortega  </p></b>
-        <p>Esta practica fue realmente interesante porque comprendí los diferentes conceptos fundamentales que se involucran en el diseño Web basados en CSS, como también la preparación de una estructura visual de página web con dos columnas y por supuesto su anchura fija. Además, también entendí con mayor facilidad el cómo es el empleo de un archivo de “reset” de CSS y cómo se debe de añadir a las páginas. En esta práctica se aborda el uso del elemento <div> y así mismo las propiedades “float” y “clear” para crear columnas en la página.
-          Son temas muy importantes que debemos comprender mucho sobre ellos ya que básicamente comprendiendo esta información es posible ponerla en practica en determinado tiempo con mas facilidad y mejorando cada día para un buen desempeño. </p>
+        <p>Esta practica fue realmente interesante porque comprendí los diferentes conceptos fundamentales que se involucran en el diseño Web basados en CSS, como también la preparación de una estructura visual de página web con dos columnas y por supuesto su anchura fija. Además, también entendí con mayor facilidad el cómo es el empleo de un archivo de “reset” de CSS y cómo se debe de añadir a las páginas. En esta práctica se aborda el uso del elemento &lt;div&gt; y así mismo las propiedades “float” y “clear” para crear columnas en la página.
+        Son temas muy importantes que debemos comprender mucho sobre ellos ya que básicamente comprendiendo esta información es posible ponerla en practica en determinado tiempo con mas facilidad y mejorando cada día para un buen desempeño.</p>
         <br>
         <br>
             <h4>Elaborado por:</h4>
@@ -337,4 +338,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    </body>
 </html>
+
 
