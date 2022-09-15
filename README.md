@@ -25,15 +25,14 @@
         </nav>
      <H3>ACTIVIDAD 3: LECCION 3  Introducción a la presentación en pantalla con CSS </H3>
      <center><img src="css1.png" width="250" height="180"></center>
-     <b><p>Objetivos</p></b>
+<b><p>Objetivos</p></b>
      <p>En esta siguiente lección aprenderemos los conceptos fundamentales de diseño Web basados en CSS y la preparación de una estructura visual de página web con dos columnas y anchura fija. Además, también veremos el empleo de un archivo de “reset” de CSS y cómo se añade a las páginas. Se aborda también el uso del elemento &lt;div&gt; y las propiedades “float” y “clear” para crear columnas en la página.</p>
      <b><p>El papel del archivo de reset CSS:</p></b>
      <p>Antes de empezar a crear un diseño visual de página Web vamos a ver cómo se utiliza un archivo de reset de CSS. Todos los elementos HTML se muestran en pantalla utilizando los estilos por defecto que aplica cada navegador. Ya hemos visto en el capítulo precedente cómo CSS nos permite definir estilos para tipos de letra, modificando el tamaño y la fuente, pero hay otros estilos no tan obvios. Por ejemplo: el estilo por defecto para un elemento heading 1 (&lt;h1&gt;) incluye unos márgenes de 10 pixeles por encima y por debajo del texto. Si queremos modificar el estilo de h1 para que no lleve márgenes, tendremos que indicar de manera explícita unas reglas que conviertan dichos valores a cero.
       Una regla CSS para anular los márgenes superior e inferior de los elementos heading 1 es así: </p>
-      <pre class="code">h1{<br/>   margin-top:0px;<br/>   margin-bottom:0px;<br/>}</pre></p>
+<pre class="code">h1{<br/>   margin-top:0px;<br/>   margin-bottom:0px;<br/>}</pre></p>
       <p> Los elementos HTML incluyen márgenes por defecto. Aunque los navegadores web actuales tienen una calidad muy superior a los antiguos, conviene saber que cada motor de restitución empleado por los navegadores aplica sus propias reglas para mostrar los elementos en pantalla. En teoría esto quiere decir que el margen por defecto de 10 pixeles en un navegador X puede transformarse en 15 pixeles en el navegador y estas diferencias generan resultados no homogéneos a la hora de ver las páginas en distintos sistemas 
-      Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS de reset que elimine los estilos por defecto aplicados a los elementos HTML utilizados con más frecuencia. Con este reinicio de valores podemos conseguir una base fiable y coherente sobre la cual construir nuestros nuevos estilos. Para hacernos idea de cómo funcionan los estilos, vamos a abrir una página que ya tiene varios estilos y le asociaremos una hoja de estilos CSS de reset.
-      </p>
+      Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS de reset que elimine los estilos por defecto aplicados a los elementos HTML utilizados con más frecuencia. Con este reinicio de valores podemos conseguir una base fiable y coherente sobre la cual construir nuestros nuevos estilos. Para hacernos idea de cómo funcionan los estilos, vamos a abrir una página que ya tiene varios estilos y le asociaremos una hoja de estilos CSS de reset.</p>
       <ol>
         <li> En el editor de textos, en Archivo selecciona Abrir. Abre en la carpeta HTML5_03lessons el archivo 03_reset.html.
         Este archivo contiene una serie de elementos HTML genéricos, como títulos, párrafos, listas y formularios. No incluye estilos CSS.</li>
@@ -137,8 +136,7 @@
       En este código hemos hecho estos cambios: hemos definido el recuadro alrededor de cada elemento de la lista con una anchura de 170 pixels  y una altura de 40 pixels. Hemos añadido un color de fondo, hemos alineado cada elemento al centro del recuadro y además, se dibujarán en pantalla los bordes verticales de cada recuadro con un trazo negro de 1 pixel. Guarda el archivo y visualízalo en el navegador.</li>
      <li>Debajo de la declaración de border-right, añade esta línea de código:
      <pre class="code">
-      line-height:40px;
-     </pre></li>
+      line-height:40px;</pre></li>
      <li>Guarda el archivo y muéstralo en el navegador, El texto aparece ahora centrado dentro del recuadro. Conviene notar que podemos tener problemas si en un futuro cambiásemos el texto de los elementos de la navegación, ya que tanto el valor de “line-height” como el tamaño del propio contenedor se basan en el tamaño de la fuente. Si cambiásemos el tamaño de la fuente o la altura de la sección “nav”, habría que volver a ajustarlo todo para compensar los desplazamientos.</li>
      </ol>
      
@@ -165,7 +163,7 @@
      <p><b>Aplicar una imagen de fondo al pie de página </b></p>
      <ol>     
      <li>Localiza el div #footer y sustituye todo el contenido de texto que hay dentro por este que aparece aquí
-      <pre class="code">&lt;div id="footer"&gt;<br/><strong>  &lt;p&gt;</strong>Copyright Worldwide Apparel 2011 <strong>&lt;/p&gt;</strong><br/> &lt;p&gt;All content on this site is confidential and should not be shared with anyone outside of Worldwide Apparel.&lt;p&gt;<br/>&lt;/div&gt;</pre></li> 
+      <pre class="code">&lt;div id="footer"&gt;<br/>  &lt;p&gt;Copyright Worldwide Apparel 2011 &lt;/p&gt;<br/> &lt;p&gt;All content on this site is confidential and should not be shared with anyone outside of Worldwide Apparel.&lt;p&gt;<br/>&lt;/div&gt;</pre></li> 
       <li>Guarda la página y ábrela en el navegador.</li> 
       <li>En la hoja de estilos interna, encuentra la regla para el pie de página (“#footer”). Añade una nueva regla para aplicar una imagen de fondo indicando un archivo de la carpeta de imágenes de tu equipo:
        <pre class="code">#footer {<br/>  clear:both;<br/>  background-color:#BA2B22;<br/>background-image:url(images/footer_background.jpg);<br/>  background-repeat:no-repeat;<br/>}</pre>
@@ -174,7 +172,7 @@
         <pre class="code">#footer {<br/>     clear:both;<br/>     background-color:#BA2B22;<br/>     background-image:url(images/footer_background.jpg);<br/>     background-repeat:no-repeat;<br/>  width:960px;<br/>  height:128px;<br/>}</pre></li> 
       <li>En el editor de texto, encuentra la regla #footer y justo debajo añade esta otra regla para párrafos, que se aplicará únicamente a los párrafos del footer:
       <pre class="code">
-      <strong>#footer p {<br/>  margin:10px 0px 0px 20px;<br/>  width:280px;<br/>  font-family:Verdana, Geneva, sans-serif;<br/>  font-size:0.689em;<br/>}</strong></pre>
+      #footer p {<br/>  margin:10px 0px 0px 20px;<br/>  width:280px;<br/>  font-family:Verdana, Geneva, sans-serif;<br/>  font-size:0.689em;<br/>}</pre>
        Esta regla añade un margen superior de 10 pixels y margen izquierdo de 20 pixels a ambos párrafos del pie.</li>
       <li>Guarda la página y visualízala en el navegador.</li> 
       <li>Añade la declaración que aparece en rojo a la regla #footer:
